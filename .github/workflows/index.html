@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>faR1onInken</title>
+<style>
+  :root {
+    --bg: #f4f6f8; --card: #ffffff; --fg: #14202b; --muted: #5d6b78;
+    --line: #dde3e9; --accent: #1a7f5a; --accent-fg: #ffffff; --warn: #9a5b00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1519; --card: #182026; --fg: #e8eef3; --muted: #93a1ad;
+            --line: #27323a; --accent: #35c98e; --accent-fg: #06251a; --warn: #f0b95a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 520px; margin: 0 auto; padding: 20px 16px 40px; display: grid; gap: 14px; }
+  h1 { font-size: 22px; margin: 4px 0 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .stat { display: flex; gap: 20px; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 28px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  .btn { display: block; width: 100%; text-align: center; padding: 15px; border-radius: 12px;
+         font-size: 17px; font-weight: 600; text-decoration: none; border: 0; cursor: pointer;
+         background: var(--accent); color: var(--accent-fg); }
+  .btn.alt { background: transparent; color: var(--fg); border: 1px solid var(--line); font-weight: 500; }
+  .btns { display: grid; gap: 10px; }
+  .row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line);
+         font-variant-numeric: tabular-nums; font-size: 14px; }
+  .row:last-child { border: 0; }
+  small, .muted { color: var(--muted); font-size: 13px; }
+  .warn { color: var(--warn); font-size: 13px; }
+  code { word-break: break-all; font-size: 12px; }
+  h2 { font-size: 15px; margin: 0 0 8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>faR1onInken</h1>
+  <p class="muted" style="margin:0">Бесплатные рабочие серверы. Список проверяется сам каждые 3 часа.</p>
+
+  <div class="card">
+    <div class="stat">
+      <div><b id="alive">…</b><span>живых серверов</span></div>
+      <div><b id="checked">…</b><span>проверено</span></div>
+      <div><b id="ago">…</b><span>назад обновлено</span></div>
+    </div>
+    <p class="muted" id="msg" style="margin:10px 0 0">Загружаю состояние…</p>
+  </div>
+
+  <div class="card btns">
+    <a class="btn" id="hiddify" href="#">Добавить в Hiddify</a>
+    <a class="btn alt" id="v2rayng" href="#">Добавить в v2rayNG</a>
+    <a class="btn alt" id="streisand" href="#">Добавить в Streisand (iPhone)</a>
+    <button class="btn alt" id="copy" type="button">Скопировать ссылку подписки</button>
+    <small>Если кнопка ничего не делает, скопируй ссылку и вставь в клиенте: «Добавить подписку из буфера».</small>
+  </div>
+
+  <div class="card">
+    <h2>Самые быстрые сейчас</h2>
+    <div id="top"><span class="muted">…</span></div>
+  </div>
+
+  <div class="card">
+    <h2>Как пользоваться</h2>
+    <ol style="margin:0;padding-left:20px">
+      <li>Поставь клиент <b>Hiddify</b> (Android, iPhone, Windows) или v2rayNG на Android.</li>
+      <li>Нажми кнопку выше, клиент добавит подписку.</li>
+      <li>В клиенте обнови подписку и выбери сервер с наименьшим пингом.</li>
+      <li>Если сервер не открывается, возьми другой. Это нормально для бесплатных.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <p class="warn" style="margin-top:0">Серверы публичные и чужие. Владелец может видеть незашифрованный трафик. Не входи через них в банки и почту.</p>
+    <small>Ссылка подписки:<br><code id="link"></code></small>
+  </div>
+</main>
+
+<script>
+  var host = location.hostname, parts = location.pathname.split("/").filter(Boolean);
+  var user = host.split(".")[0], repo = parts[0] || (user + ".github.io");
+  var sub = (host.endsWith("github.io"))
+    ? "https://raw.githubusercontent.com/" + user + "/" + repo + "/main/sub.txt"
+    : new URL("sub.txt", location.href).href;
+  var enc = encodeURIComponent(sub);
+
+  document.getElementById("hiddify").href = "hiddify://import/" + sub + "#Free";
+  document.getElementById("v2rayng").href = "v2rayng://install-config?url=" + enc;
+  document.getElementById("streisand").href = "streisand://import/" + sub;
+  document.getElementById("link").textContent = sub;
+
+  document.getElementById("copy").onclick = function () {
+    var b = this;
+    function done() { b.textContent = "Скопировано"; setTimeout(function () { b.textContent = "Скопировать ссылку подписки"; }, 1800); }
+    if (navigator.clipboard) { navigator.clipboard.writeText(sub).then(done, function () { prompt("Скопируй:", sub); }); }
+    else { prompt("Скопируй:", sub); }
+  };
+
+  fetch("status.json?" + Date.now()).then(function (r) { return r.json(); }).then(function (s) {
+    document.getElementById("alive").textContent = s.alive;
+    document.getElementById("checked").textContent = s.checked;
+    var mins = Math.max(0, Math.round((Date.now() - new Date(s.updated)) / 60000));
+    document.getElementById("ago").textContent = mins < 90 ? mins + " мин" : Math.round(mins / 60) + " ч";
+    document.getElementById("msg").textContent = "В подписке " + s.kept + " серверов, отсортированы по скорости ответа.";
+    document.getElementById("top").innerHTML = s.top.map(function (t) {
+      return '<div class="row"><span>' + t.proto + " : " + t.port + "</span><span>" + t.ms + " мс</span></div>";
+    }).join("");
+  }).catch(function () {
+    document.getElementById("msg").textContent = "Список ещё не собирался. Запусти workflow в репозитории (вкладка Actions).";
+  });
+</script>
+</body>
+</html>
