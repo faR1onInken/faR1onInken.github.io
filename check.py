@@ -125,13 +125,17 @@ async def run(candidates):
 
 
 def main():
-    seen, candidates = set(), []
+    seen, candidates, src_info = set(), [], []
     for url in SOURCES:
+        short = url.split("githubusercontent.com/")[-1][:70]
         try:
-            lines = split_lines(fetch(url))
+            text = fetch(url)
+            lines = split_lines(text)
             print(f"{len(lines):6d}  {url}")
+            src_info.append({"src": short, "bytes": len(text), "links": len(lines)})
         except Exception as e:
             print(f"ОШИБКА  {url}: {e}")
+            src_info.append({"src": short, "error": str(e)[:120]})
             continue
         for ln in lines:
             if ln in seen:
@@ -171,6 +175,7 @@ def main():
         "checked": len(uniq),
         "alive": len(alive),
         "kept": len(best),
+        "sources": src_info,
         "top": [{"proto": c["proto"], "port": c["port"], "ms": c["ms"]} for c in best[:10]],
     }
     with open("status.json", "w", encoding="utf-8") as f:
