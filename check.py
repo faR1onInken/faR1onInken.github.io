@@ -12,6 +12,7 @@ import base64
 import ipaddress
 import json
 import random
+import re
 import ssl
 import time
 import urllib.request
@@ -20,12 +21,18 @@ from urllib.parse import parse_qs, unquote, urlsplit
 
 SOURCES = [
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub1.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Sub2.txt",
-    "https://raw.githubusercontent.com/barry-far/V2ray-Configs/main/Splitted-By-Protocol/vless.txt",
-    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
-    "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt",
     "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_Sub.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub2.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub3.txt",
+    "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
+    "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt",
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
+    "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/config/protocols/vless.txt",
 ]
 
 SCHEMES = ("vless://", "vmess://", "trojan://", "ss://")
@@ -47,14 +54,34 @@ def fetch(url):
         return r.read().decode("utf-8", errors="ignore")
 
 
+LINK_RE = re.compile(r"(?<![A-Za-z0-9])(?:vless|vmess|trojan|ss)://[^\s\"'<>`,]+")
+
+
+def find_links(text):
+    return LINK_RE.findall(text)
+
+
 def split_lines(text):
-    """Список может быть обычным текстом или целиком в base64."""
-    if "://" not in text[:200]:
+    """Достаёт ссылки из любого вида списка: обычный текст, base64, base64 с заголовком."""
+    links = find_links(text)
+    if links:
+        return links
+    # всё в base64 (заголовки-комментарии пропускаем)
+    body = [ln.strip() for ln in text.splitlines()
+            if ln.strip() and not ln.lstrip().startswith(("#", "//"))]
+    for blob in ("".join(body), None):
         try:
-            text = b64decode_loose("".join(text.split())).decode("utf-8", errors="ignore")
+            if blob is None:
+                # каждая строка в base64 отдельно
+                decoded = "\n".join(b64decode_loose(ln).decode("utf-8", errors="ignore") for ln in body)
+            else:
+                decoded = b64decode_loose(blob).decode("utf-8", errors="ignore")
         except Exception:
-            return []
-    return [ln.strip() for ln in text.splitlines() if ln.strip().startswith(SCHEMES)]
+            continue
+        links = find_links(decoded)
+        if links:
+            return links
+    return []
 
 
 def parse(link):
