@@ -1,39 +1,125 @@
 {
- "updated": "2026-11-16T16:40:22+00:00",
- "checked": 0,
- "alive": 0,
- "kept": 0,
+ "updated": "2026-11-16T16:50:34+00:00",
+ "checked": 4000,
+ "alive": 1965,
+ "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
    "bytes": 30199,
-   "links": 0
-  },
-  {
-   "src": "barry-far/V2ray-Configs/main/Sub1.txt",
-   "error": "HTTP Error 404: Not Found"
-  },
-  {
-   "src": "barry-far/V2ray-Configs/main/Sub2.txt",
-   "error": "HTTP Error 404: Not Found"
-  },
-  {
-   "src": "barry-far/V2ray-Configs/main/Splitted-By-Protocol/vless.txt",
-   "error": "HTTP Error 404: Not Found"
-  },
-  {
-   "src": "Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
-   "error": "HTTP Error 404: Not Found"
-  },
-  {
-   "src": "ebrasha/free-v2ray-public-list/refs/heads/main/vless_configs.txt",
-   "error": "HTTP Error 404: Not Found"
+   "links": 120
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
    "bytes": 197307,
-   "links": 0
+   "links": 580
+  },
+  {
+   "src": "barry-far/V2ray-config/main/All_Configs_Sub.txt",
+   "bytes": 2265359,
+   "links": 9280
+  },
+  {
+   "src": "barry-far/V2ray-config/main/Sub1.txt",
+   "bytes": 66789,
+   "links": 455
+  },
+  {
+   "src": "barry-far/V2ray-config/main/Sub2.txt",
+   "bytes": 48752,
+   "links": 501
+  },
+  {
+   "src": "barry-far/V2ray-config/main/Sub3.txt",
+   "bytes": 67676,
+   "links": 500
+  },
+  {
+   "src": "barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
+   "bytes": 1673966,
+   "links": 6317
+  },
+  {
+   "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
+   "bytes": 1213924,
+   "links": 3969
+  },
+  {
+   "src": "MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
+   "bytes": 90300,
+   "links": 230
+  },
+  {
+   "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
+   "bytes": 25468,
+   "links": 100
+  },
+  {
+   "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
+   "bytes": 3162411,
+   "links": 11285
+  },
+  {
+   "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
+   "bytes": 1213400,
+   "links": 4635
+  },
+  {
+   "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
+   "bytes": 211639,
+   "links": 848
   }
  ],
- "top": []
+ "top": [
+  {
+   "proto": "vmess",
+   "port": 2052,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 2095,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 80,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 2052,
+   "ms": 5
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
+   "ms": 5
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 5
+  },
+  {
+   "proto": "vmess",
+   "port": 2095,
+   "ms": 5
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 5
+  }
+ ]
 }
