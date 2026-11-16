@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-16T16:50:34+00:00",
+ "updated": "2026-11-16T18:47:53+00:00",
  "checked": 4000,
- "alive": 1965,
+ "alive": 1870,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 30199,
-   "links": 120
+   "bytes": 34638,
+   "links": 126
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
-   "bytes": 197307,
+   "bytes": 197267,
    "links": 580
   },
   {
@@ -51,17 +51,17 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 25468,
+   "bytes": 26976,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3162411,
-   "links": 11285
+   "bytes": 3167863,
+   "links": 11286
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1213400,
+   "bytes": 1217361,
    "links": 4635
   },
   {
@@ -72,54 +72,54 @@
  ],
  "top": [
   {
-   "proto": "vmess",
-   "port": 2052,
-   "ms": 5
-  },
-  {
-   "proto": "vmess",
-   "port": 2095,
-   "ms": 5
-  },
-  {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 5
-  },
-  {
-   "proto": "vmess",
+   "proto": "vless",
    "port": 80,
-   "ms": 5
+   "ms": 2
   },
   {
-   "proto": "vmess",
-   "port": 2052,
-   "ms": 5
+   "proto": "vless",
+   "port": 8880,
+   "ms": 2
   },
   {
    "proto": "vless",
    "port": 80,
-   "ms": 5
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 2082,
+   "ms": 2
   },
   {
    "proto": "vmess",
-   "port": 2086,
-   "ms": 5
+   "port": 80,
+   "ms": 2
   },
   {
-   "proto": "ss",
-   "port": 443,
-   "ms": 5
+   "proto": "vless",
+   "port": 2095,
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 8443,
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 2
   },
   {
    "proto": "vmess",
    "port": 2095,
-   "ms": 5
+   "ms": 2
   },
   {
    "proto": "ss",
    "port": 443,
-   "ms": 5
+   "ms": 2
   }
  ]
 }
