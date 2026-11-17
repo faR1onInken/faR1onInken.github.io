@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-17T07:03:05+00:00",
+ "updated": "2026-11-17T09:55:22+00:00",
  "checked": 4000,
- "alive": 1921,
+ "alive": 1885,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 190190,
-   "links": 640
+   "bytes": 122380,
+   "links": 435
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
-   "bytes": 197267,
+   "bytes": 197295,
    "links": 580
   },
   {
@@ -41,28 +41,28 @@
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
-   "bytes": 1192291,
-   "links": 3974
+   "bytes": 1206362,
+   "links": 3976
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
-   "bytes": 79320,
-   "links": 209
+   "bytes": 78040,
+   "links": 190
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 22688,
+   "bytes": 24568,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3173855,
-   "links": 11299
+   "bytes": 3162119,
+   "links": 11268
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1223321,
-   "links": 4635
+   "bytes": 1212421,
+   "links": 4602
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -72,53 +72,53 @@
  ],
  "top": [
   {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
    "proto": "vmess",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
-   "port": 2095,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 2082,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
    "port": 2086,
-   "ms": 2
+   "ms": 1
   },
   {
    "proto": "vmess",
    "port": 80,
-   "ms": 2
+   "ms": 1
   },
   {
    "proto": "vmess",
    "port": 2086,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 8080,
+   "ms": 2
+  },
+  {
+   "proto": "vmess",
+   "port": 53,
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 2
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 8080,
    "ms": 2
   }
  ]
