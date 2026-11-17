@@ -34,8 +34,10 @@ from datetime import datetime, timezone
 from urllib.parse import parse_qs, unquote, urlsplit
 
 SOURCES = [
-    # первым идёт список, собранный под РФ — он приоритетнее
+    # первые два идут в приоритете: список под РФ и маленький отфильтрованный
     "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/Eternity",
     "https://raw.githubusercontent.com/nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-config/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-config/main/Sub1.txt",
@@ -52,11 +54,11 @@ SOURCES = [
 
 SCHEMES = ("vless://", "vmess://", "trojan://", "ss://")
 
-MAX_CANDIDATES = 6000   # сколько конфигов проверять на стадии 1
-TCP_CONCURRENCY = 400   # одновременных TCP-проверок
-PROXY_TEST = 400        # сколько лучших по TCP гнать на стадию 2 (реальный трафик)
-PROXY_CONCURRENCY = 40  # сколько sing-box крутить одновременно
-KEEP = 150              # сколько оставить в подписке
+MAX_CANDIDATES = 9000   # сколько конфигов проверять на стадии 1
+TCP_CONCURRENCY = 500   # одновременных TCP-проверок
+PROXY_TEST = 2400       # сколько лучших по TCP гнать на стадию 2 (реальный трафик)
+PROXY_CONCURRENCY = 80  # сколько sing-box крутить одновременно
+KEEP = 200              # сколько оставить в подписке
 TIMEOUT = 4.0           # сек на TCP-проверку
 PROXY_TIMEOUT = 8       # сек на попытку пройти через прокси
 SINGBOX_VERSION = "1.10.7"
