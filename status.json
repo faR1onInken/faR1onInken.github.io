@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17T14:01:19+00:00",
+ "updated": "2026-11-17T15:16:34+00:00",
  "checked": 4000,
- "alive": 1905,
+ "alive": 1800,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 60989,
-   "links": 232
+   "bytes": 55278,
+   "links": 202
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -51,18 +51,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 24842,
+   "bytes": 25849,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3136397,
-   "links": 11146
+   "bytes": 3135958,
+   "links": 11144
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1184898,
-   "links": 4493
+   "bytes": 1184460,
+   "links": 4491
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -73,53 +73,53 @@
  "top": [
   {
    "proto": "vmess",
-   "port": 2052,
-   "ms": 5
+   "port": 2086,
+   "ms": 6
   },
   {
    "proto": "vless",
+   "port": 8880,
+   "ms": 6
+  },
+  {
+   "proto": "vmess",
+   "port": 2052,
+   "ms": 6
+  },
+  {
+   "proto": "vmess",
    "port": 80,
-   "ms": 5
+   "ms": 6
+  },
+  {
+   "proto": "vless",
+   "port": 8080,
+   "ms": 6
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 7
   },
   {
    "proto": "vmess",
    "port": 2086,
-   "ms": 5
+   "ms": 7
   },
   {
    "proto": "vmess",
-   "port": 80,
-   "ms": 5
+   "port": 2086,
+   "ms": 7
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
+   "ms": 7
   },
   {
    "proto": "vmess",
    "port": 8880,
-   "ms": 5
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 5
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 5
-  },
-  {
-   "proto": "vmess",
-   "port": 80,
-   "ms": 5
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 5
-  },
-  {
-   "proto": "vmess",
-   "port": 8080,
-   "ms": 5
+   "ms": 7
   }
  ]
 }
