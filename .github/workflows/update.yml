@@ -2,19 +2,22 @@ name: Обновить и проверить конфиги
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # каждые 10 минут (время UTC, GitHub может задерживать запуск на несколько минут)
+    - cron: "*/10 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
+  # если предыдущий прогон ещё идёт — отменяем его, чтобы не копилась очередь
   group: update
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
 
@@ -34,6 +37,8 @@ jobs:
           base="https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/storage/kv/namespaces/$CF_KV_NAMESPACE_ID/values"
           if [ -s sub_plain.txt ]; then
             curl -fsS -X PUT "$base/sub" -H "Authorization: Bearer $CF_API_TOKEN" --data-binary @sub_plain.txt > /dev/null
+          else
+            echo "sub_plain.txt пустой — список в хранилище не отправлен"
           fi
           curl -fsS -X PUT "$base/status" -H "Authorization: Bearer $CF_API_TOKEN" --data-binary @status.json > /dev/null
 
@@ -43,5 +48,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add status.json
           git commit -m "Обновление счётчиков" || echo "Без изменений"
-         
+          git pull --rebase --autostash || true
           git push
