@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-17T18:42:41+00:00",
+ "updated": "2026-11-17T19:51:17+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 6000,
- "tcp_alive": 2583,
+ "tcp_alive": 2314,
  "proxy_tested": 400,
- "proxy_alive": 45,
- "alive": 2583,
- "kept": 45,
- "seconds": 127,
+ "proxy_alive": 67,
+ "alive": 2314,
+ "kept": 67,
+ "seconds": 111,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -57,18 +57,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 26285,
+   "bytes": 23828,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3133876,
-   "links": 11123
+   "bytes": 3134026,
+   "links": 11124
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1183178,
-   "links": 4486
+   "bytes": 1183454,
+   "links": 4487
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -80,62 +80,62 @@
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 144,
-   "tcp_ms": 3
-  },
-  {
-   "proto": "ss",
-   "port": 11051,
-   "ms": 159,
-   "tcp_ms": 10
-  },
-  {
-   "proto": "ss",
-   "port": 8080,
-   "ms": 177,
-   "tcp_ms": 20
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 187,
-   "tcp_ms": 44
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 203,
-   "tcp_ms": 47
+   "ms": 93,
+   "tcp_ms": 14
   },
   {
    "proto": "ss",
    "port": 443,
-   "ms": 206,
-   "tcp_ms": 52
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 210,
-   "tcp_ms": 22
-  },
-  {
-   "proto": "ss",
-   "port": 443,
-   "ms": 220,
-   "tcp_ms": 36
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 225,
-   "tcp_ms": 52
+   "ms": 104,
+   "tcp_ms": 21
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 229,
-   "tcp_ms": 39
+   "ms": 114,
+   "tcp_ms": 40
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 137,
+   "tcp_ms": 16
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 137,
+   "tcp_ms": 41
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 140,
+   "tcp_ms": 9
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 149,
+   "tcp_ms": 16
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 150,
+   "tcp_ms": 40
+  },
+  {
+   "proto": "vmess",
+   "port": 1270,
+   "ms": 150,
+   "tcp_ms": 40
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 152,
+   "tcp_ms": 16
   }
  ]
 }
