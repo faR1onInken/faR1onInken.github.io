@@ -1,13 +1,19 @@
 {
- "updated": "2026-11-17T16:22:25+00:00",
- "checked": 4000,
- "alive": 1397,
- "kept": 150,
+ "updated": "2026-11-17T16:50:53+00:00",
+ "mode": "proxy",
+ "note": "",
+ "checked": 6000,
+ "tcp_alive": 2023,
+ "proxy_tested": 400,
+ "proxy_alive": 26,
+ "alive": 2023,
+ "kept": 26,
+ "seconds": 114,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 55278,
-   "links": 202
+   "bytes": 43067,
+   "links": 155
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -51,17 +57,17 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 24451,
+   "bytes": 29015,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3132025,
+   "bytes": 3132020,
    "links": 11121
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1182468,
+   "bytes": 1182463,
    "links": 4483
   },
   {
@@ -72,54 +78,64 @@
  ],
  "top": [
   {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 1
+   "proto": "ss",
+   "port": 19999,
+   "ms": 96,
+   "tcp_ms": 19
   },
   {
-   "proto": "vmess",
-   "port": 2095,
-   "ms": 1
+   "proto": "ss",
+   "port": 8443,
+   "ms": 103,
+   "tcp_ms": 14
   },
   {
-   "proto": "vmess",
+   "proto": "ss",
    "port": 8080,
-   "ms": 1
+   "ms": 116,
+   "tcp_ms": 14
   },
   {
-   "proto": "vmess",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 2095,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
-   "port": 2052,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 2082,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
+   "proto": "ss",
    "port": 8080,
-   "ms": 1
+   "ms": 126,
+   "tcp_ms": 9
+  },
+  {
+   "proto": "ss",
+   "port": 11051,
+   "ms": 129,
+   "tcp_ms": 17
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 137,
+   "tcp_ms": 24
+  },
+  {
+   "proto": "ss",
+   "port": 8080,
+   "ms": 148,
+   "tcp_ms": 15
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 160,
+   "tcp_ms": 16
+  },
+  {
+   "proto": "ss",
+   "port": 8080,
+   "ms": 173,
+   "tcp_ms": 23
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 183,
+   "tcp_ms": 30
   }
  ]
 }
