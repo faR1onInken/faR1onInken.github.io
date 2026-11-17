@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17T00:50:58+00:00",
+ "updated": "2026-11-17T03:48:33+00:00",
  "checked": 4000,
- "alive": 1702,
+ "alive": 1975,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 46880,
-   "links": 181
+   "bytes": 310128,
+   "links": 986
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -51,18 +51,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 24207,
+   "bytes": 23476,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3148942,
-   "links": 11177
+   "bytes": 3167938,
+   "links": 11271
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1204343,
-   "links": 4552
+   "bytes": 1217178,
+   "links": 4605
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -73,53 +73,53 @@
  "top": [
   {
    "proto": "vless",
-   "port": 2082,
-   "ms": 6
-  },
-  {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 6
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 6
-  },
-  {
-   "proto": "vless",
-   "port": 2052,
-   "ms": 6
-  },
-  {
-   "proto": "vless",
-   "port": 8880,
-   "ms": 6
-  },
-  {
-   "proto": "vless",
-   "port": 2086,
-   "ms": 6
-  },
-  {
-   "proto": "ss",
-   "port": 443,
-   "ms": 6
-  },
-  {
-   "proto": "ss",
-   "port": 443,
-   "ms": 6
+   "port": 80,
+   "ms": 1
   },
   {
    "proto": "vmess",
    "port": 80,
-   "ms": 6
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 1
   },
   {
    "proto": "vmess",
+   "port": 80,
+   "ms": 1
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 2052,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
    "port": 8880,
-   "ms": 6
+   "ms": 2
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
+   "ms": 2
+  },
+  {
+   "proto": "vmess",
+   "port": 8080,
+   "ms": 2
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 2
   }
  ]
 }
