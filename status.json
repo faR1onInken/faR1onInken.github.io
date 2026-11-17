@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-16T21:42:06+00:00",
+ "updated": "2026-11-17T00:50:58+00:00",
  "checked": 4000,
- "alive": 1877,
+ "alive": 1702,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 39785,
-   "links": 151
+   "bytes": 46880,
+   "links": 181
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -41,28 +41,28 @@
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
-   "bytes": 1213924,
-   "links": 3969
+   "bytes": 1192291,
+   "links": 3974
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt",
-   "bytes": 90300,
-   "links": 230
+   "bytes": 79320,
+   "links": 209
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 21500,
+   "bytes": 24207,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3146605,
-   "links": 11175
+   "bytes": 3148942,
+   "links": 11177
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1201926,
-   "links": 4549
+   "bytes": 1204343,
+   "links": 4552
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -72,13 +72,38 @@
  ],
  "top": [
   {
-   "proto": "vmess",
-   "port": 80,
+   "proto": "vless",
+   "port": 2082,
    "ms": 6
   },
   {
    "proto": "vmess",
-   "port": 2095,
+   "port": 2086,
+   "ms": 6
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 6
+  },
+  {
+   "proto": "vless",
+   "port": 2052,
+   "ms": 6
+  },
+  {
+   "proto": "vless",
+   "port": 8880,
+   "ms": 6
+  },
+  {
+   "proto": "vless",
+   "port": 2086,
+   "ms": 6
+  },
+  {
+   "proto": "ss",
+   "port": 443,
    "ms": 6
   },
   {
@@ -92,34 +117,9 @@
    "ms": 6
   },
   {
-   "proto": "vless",
+   "proto": "vmess",
    "port": 8880,
    "ms": 6
-  },
-  {
-   "proto": "vless",
-   "port": 2095,
-   "ms": 6
-  },
-  {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 6
-  },
-  {
-   "proto": "vmess",
-   "port": 2082,
-   "ms": 6
-  },
-  {
-   "proto": "vmess",
-   "port": 2052,
-   "ms": 7
-  },
-  {
-   "proto": "vmess",
-   "port": 80,
-   "ms": 7
   }
  ]
 }
