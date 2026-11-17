@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-17T11:48:55+00:00",
+ "updated": "2026-11-17T12:43:28+00:00",
  "checked": 4000,
- "alive": 1879,
+ "alive": 1676,
  "kept": 150,
  "sources": [
   {
@@ -51,18 +51,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 25068,
+   "bytes": 27301,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3160342,
-   "links": 11259
+   "bytes": 3146492,
+   "links": 11197
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1210840,
-   "links": 4596
+   "bytes": 1196482,
+   "links": 4540
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -72,54 +72,54 @@
  ],
  "top": [
   {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
    "proto": "vmess",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vmess",
-   "port": 2082,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 80,
-   "ms": 1
-  },
-  {
-   "proto": "vless",
    "port": 8080,
-   "ms": 1
+   "ms": 9
+  },
+  {
+   "proto": "vmess",
+   "port": 8880,
+   "ms": 9
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 9
+  },
+  {
+   "proto": "vmess",
+   "port": 2095,
+   "ms": 9
+  },
+  {
+   "proto": "vmess",
+   "port": 8080,
+   "ms": 9
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 9
   },
   {
    "proto": "vmess",
    "port": 80,
-   "ms": 2
+   "ms": 10
+  },
+  {
+   "proto": "vmess",
+   "port": 8080,
+   "ms": 10
+  },
+  {
+   "proto": "ss",
+   "port": 443,
+   "ms": 10
   },
   {
    "proto": "vmess",
    "port": 80,
-   "ms": 2
-  },
-  {
-   "proto": "vmess",
-   "port": 2052,
-   "ms": 2
+   "ms": 10
   }
  ]
 }
