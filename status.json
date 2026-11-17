@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-17T11:42:35+00:00",
+ "updated": "2026-11-17T11:48:55+00:00",
  "checked": 4000,
- "alive": 1901,
+ "alive": 1879,
  "kept": 150,
  "sources": [
   {
@@ -66,8 +66,8 @@
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
-   "bytes": 211639,
-   "links": 848
+   "bytes": 189438,
+   "links": 756
   }
  ],
  "top": [
@@ -77,38 +77,38 @@
    "ms": 1
   },
   {
+   "proto": "vmess",
+   "port": 80,
+   "ms": 1
+  },
+  {
    "proto": "vless",
    "port": 80,
-   "ms": 2
+   "ms": 1
+  },
+  {
+   "proto": "vmess",
+   "port": 2082,
+   "ms": 1
   },
   {
    "proto": "vless",
    "port": 80,
-   "ms": 2
+   "ms": 1
   },
   {
-   "proto": "vmess",
-   "port": 2095,
-   "ms": 2
-  },
-  {
-   "proto": "vmess",
+   "proto": "vless",
    "port": 80,
-   "ms": 2
+   "ms": 1
   },
   {
-   "proto": "vmess",
+   "proto": "vless",
    "port": 8080,
-   "ms": 2
+   "ms": 1
   },
   {
    "proto": "vmess",
    "port": 80,
-   "ms": 2
-  },
-  {
-   "proto": "ss",
-   "port": 1080,
    "ms": 2
   },
   {
@@ -118,7 +118,7 @@
   },
   {
    "proto": "vmess",
-   "port": 2086,
+   "port": 2052,
    "ms": 2
   }
  ]
