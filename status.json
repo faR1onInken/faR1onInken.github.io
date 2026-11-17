@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-17T17:53:45+00:00",
+ "updated": "2026-11-17T18:02:35+00:00",
  "mode": "proxy",
  "note": "",
- "checked": 8797,
- "tcp_alive": 2901,
- "proxy_tested": 2400,
- "proxy_alive": 526,
- "alive": 2901,
- "kept": 200,
- "seconds": 253,
+ "checked": 6000,
+ "tcp_alive": 2142,
+ "proxy_tested": 400,
+ "proxy_alive": 39,
+ "alive": 2142,
+ "kept": 39,
+ "seconds": 115,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -16,18 +16,8 @@
    "links": 155
   },
   {
-   "src": "Pawdroid/Free-servers/main/sub",
-   "bytes": 2920,
-   "links": 10
-  },
-  {
-   "src": "mahdibland/V2RayAggregator/master/Eternity",
-   "bytes": 40772,
-   "links": 198
-  },
-  {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
-   "bytes": 197295,
+   "bytes": 197679,
    "links": 580
   },
   {
@@ -90,62 +80,62 @@
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 185,
-   "tcp_ms": 398
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 189,
-   "tcp_ms": 7
+   "ms": 76,
+   "tcp_ms": 6
   },
   {
    "proto": "vless",
-   "port": 443,
-   "ms": 224,
-   "tcp_ms": 105
+   "port": 23576,
+   "ms": 80,
+   "tcp_ms": 16
   },
   {
    "proto": "ss",
-   "port": 19999,
-   "ms": 253,
-   "tcp_ms": 97
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 260,
-   "tcp_ms": 7
+   "port": 8080,
+   "ms": 89,
+   "tcp_ms": 9
   },
   {
    "proto": "vless",
-   "port": 443,
-   "ms": 285,
-   "tcp_ms": 96
+   "port": 23576,
+   "ms": 119,
+   "tcp_ms": 17
+  },
+  {
+   "proto": "vless",
+   "port": 23576,
+   "ms": 120,
+   "tcp_ms": 17
+  },
+  {
+   "proto": "vless",
+   "port": 23576,
+   "ms": 123,
+   "tcp_ms": 17
   },
   {
    "proto": "ss",
-   "port": 443,
-   "ms": 287,
-   "tcp_ms": 96
-  },
-  {
-   "proto": "ss",
-   "port": 19999,
-   "ms": 295,
+   "port": 8080,
+   "ms": 136,
    "tcp_ms": 40
   },
   {
    "proto": "vless",
-   "port": 80,
-   "ms": 295,
-   "tcp_ms": 40
+   "port": 23576,
+   "ms": 157,
+   "tcp_ms": 19
   },
   {
-   "proto": "vless",
-   "port": 443,
-   "ms": 296,
-   "tcp_ms": 116
+   "proto": "ss",
+   "port": 8443,
+   "ms": 160,
+   "tcp_ms": 25
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 181,
+   "tcp_ms": 19
   }
  ]
 }
