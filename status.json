@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-17T17:35:32+00:00",
+ "updated": "2026-11-17T17:42:19+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 8797,
- "tcp_alive": 2879,
+ "tcp_alive": 2922,
  "proxy_tested": 2400,
- "proxy_alive": 501,
- "alive": 2879,
+ "proxy_alive": 506,
+ "alive": 2922,
  "kept": 200,
- "seconds": 257,
+ "seconds": 255,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -67,7 +67,7 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 25009,
+   "bytes": 22213,
    "links": 100
   },
   {
@@ -88,64 +88,64 @@
  ],
  "top": [
   {
-   "proto": "vless",
-   "port": 443,
-   "ms": 141,
-   "tcp_ms": 19
-  },
-  {
    "proto": "ss",
-   "port": 8080,
-   "ms": 161,
-   "tcp_ms": 1
+   "port": 19999,
+   "ms": 207,
+   "tcp_ms": 37
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 203,
-   "tcp_ms": 19
-  },
-  {
-   "proto": "ss",
-   "port": 8080,
-   "ms": 218,
-   "tcp_ms": 8
-  },
-  {
-   "proto": "trojan",
-   "port": 443,
-   "ms": 294,
-   "tcp_ms": 64
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 297,
-   "tcp_ms": 43
+   "ms": 224,
+   "tcp_ms": 37
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 299,
-   "tcp_ms": 553
+   "ms": 228,
+   "tcp_ms": 46
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 248,
+   "tcp_ms": 7
+  },
+  {
+   "proto": "vless",
+   "port": 10443,
+   "ms": 248,
+   "tcp_ms": 7
+  },
+  {
+   "proto": "ss",
+   "port": 28960,
+   "ms": 258,
+   "tcp_ms": 7
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 304,
-   "tcp_ms": 103
+   "ms": 263,
+   "tcp_ms": 96
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 306,
-   "tcp_ms": 64
+   "ms": 280,
+   "tcp_ms": 46
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 316,
-   "tcp_ms": 64
+   "ms": 284,
+   "tcp_ms": 36
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 295,
+   "tcp_ms": 7
   }
  ]
 }
