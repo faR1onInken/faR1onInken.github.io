@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-17T03:48:33+00:00",
+ "updated": "2026-11-17T07:03:05+00:00",
  "checked": 4000,
- "alive": 1975,
+ "alive": 1921,
  "kept": 150,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 310128,
-   "links": 986
+   "bytes": 190190,
+   "links": 640
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -16,28 +16,28 @@
   },
   {
    "src": "barry-far/V2ray-config/main/All_Configs_Sub.txt",
-   "bytes": 2241231,
-   "links": 9115
+   "bytes": 2219126,
+   "links": 9052
   },
   {
    "src": "barry-far/V2ray-config/main/Sub1.txt",
-   "bytes": 66883,
-   "links": 464
+   "bytes": 65379,
+   "links": 456
   },
   {
    "src": "barry-far/V2ray-config/main/Sub2.txt",
-   "bytes": 49762,
+   "bytes": 49658,
    "links": 501
   },
   {
    "src": "barry-far/V2ray-config/main/Sub3.txt",
-   "bytes": 68251,
+   "bytes": 63596,
    "links": 501
   },
   {
    "src": "barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
-   "bytes": 1678753,
-   "links": 6240
+   "bytes": 1635855,
+   "links": 6086
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
@@ -51,18 +51,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 23476,
+   "bytes": 22688,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3167938,
-   "links": 11271
+   "bytes": 3173855,
+   "links": 11299
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1217178,
-   "links": 4605
+   "bytes": 1223321,
+   "links": 4635
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -88,37 +88,37 @@
   },
   {
    "proto": "vmess",
+   "port": 2095,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
    "port": 80,
    "ms": 1
   },
   {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 1
-  },
-  {
    "proto": "vless",
-   "port": 2052,
+   "port": 2082,
    "ms": 1
-  },
-  {
-   "proto": "vless",
-   "port": 8880,
-   "ms": 2
-  },
-  {
-   "proto": "vmess",
-   "port": 2086,
-   "ms": 2
-  },
-  {
-   "proto": "vmess",
-   "port": 8080,
-   "ms": 2
   },
   {
    "proto": "vless",
    "port": 80,
+   "ms": 1
+  },
+  {
+   "proto": "vless",
+   "port": 2086,
+   "ms": 2
+  },
+  {
+   "proto": "vmess",
+   "port": 80,
+   "ms": 2
+  },
+  {
+   "proto": "vmess",
+   "port": 2086,
    "ms": 2
   }
  ]
