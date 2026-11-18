@@ -62,6 +62,7 @@ TCP_CONCURRENCY = 400   # одновременных TCP-проверок
 PROXY_TEST = 400        # сколько лучших по TCP гнать на стадию 2 (реальный трафик)
 PROXY_CONCURRENCY = 40  # сколько sing-box крутить одновременно
 KEEP = 150              # сколько оставить в подписке
+RU_EXTRA = 20           # сколько серверов из списка под РФ добавить без проверки трафиком
 TIMEOUT = 4.0           # сек на TCP-проверку
 PROXY_TIMEOUT = 8       # сек на попытку пройти через прокси
 SINGBOX_VERSION = "1.10.7"
@@ -572,13 +573,27 @@ def main():
 
     # fail-safe: если реальная проверка ничего не дала — отдаём TCP-результаты
     if len(proxy_ok) >= 20:
-        best = order_for_sub(proxy_ok)[:KEEP]
+        verified = order_for_sub(proxy_ok)
         mode = "proxy"
     else:
-        best = order_for_sub(alive)[:KEEP]
+        verified = order_for_sub(alive)
         mode = "tcp"
         if not proxy_note:
             proxy_note = "рабочих на стадии 2 меньше 20 — откат на стадию 1"
+
+    # Серверы из списка под РФ проверяем из США — и они часто валятся именно
+    # поэтому, хотя из России работают. Такие ставим в начало подписки без
+    # проверки трафиком: клиент попробует их первыми.
+    ru_extra = [c for c in alive if c.get("ru")][:RU_EXTRA]
+    seen_hosts, best = set(), []
+    for c in ru_extra + verified:
+        key = (c["host"], c["port"])
+        if key in seen_hosts:
+            continue
+        seen_hosts.add(key)
+        best.append(c)
+        if len(best) >= KEEP:
+            break
 
     ru_in_sub = sum(1 for c in best if c.get("ru"))
     print(f"Итог: режим {mode}, в подписке {len(best)}, из них из списка под РФ: {ru_in_sub}")
