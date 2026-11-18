@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-18T13:48:09+00:00",
+ "updated": "2026-11-18T13:50:46+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 6000,
- "tcp_alive": 2245,
+ "tcp_alive": 2545,
  "proxy_tested": 400,
- "proxy_alive": 21,
- "alive": 2245,
- "kept": 21,
- "ru_in_sub": 0,
- "ru_at_top": 0,
- "seconds": 111,
+ "proxy_alive": 36,
+ "alive": 2545,
+ "kept": 56,
+ "ru_in_sub": 20,
+ "ru_at_top": 10,
+ "seconds": 123,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -82,72 +82,72 @@
   {
    "proto": "vless",
    "port": 443,
-   "ms": 170,
-   "tcp_ms": 38,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 14430,
-   "ms": 186,
-   "tcp_ms": 32,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 1270,
-   "ms": 225,
-   "tcp_ms": 35,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 1270,
-   "ms": 262,
-   "tcp_ms": 25,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 18000,
-   "ms": 263,
-   "tcp_ms": 39,
-   "ru": false
-  },
-  {
-   "proto": "trojan",
-   "port": 443,
-   "ms": 390,
-   "tcp_ms": 34,
-   "ru": false
+   "ms": 671,
+   "tcp_ms": 671,
+   "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 896,
-   "tcp_ms": 41,
-   "ru": false
+   "ms": 709,
+   "tcp_ms": 709,
+   "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 991,
-   "tcp_ms": 42,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 2083,
-   "ms": 1115,
-   "tcp_ms": 26,
-   "ru": false
+   "ms": 745,
+   "tcp_ms": 745,
+   "ru": true
   },
   {
    "proto": "vless",
-   "port": 80,
-   "ms": 1343,
-   "tcp_ms": 10,
-   "ru": false
+   "port": 443,
+   "ms": 784,
+   "tcp_ms": 784,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 786,
+   "tcp_ms": 786,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 794,
+   "tcp_ms": 794,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 798,
+   "tcp_ms": 798,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 799,
+   "tcp_ms": 799,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 805,
+   "tcp_ms": 805,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 810,
+   "tcp_ms": 810,
+   "ru": true
   }
  ]
 }
