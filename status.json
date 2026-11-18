@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-18T13:32:05+00:00",
+ "updated": "2026-11-18T13:48:09+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 6000,
- "tcp_alive": 2449,
+ "tcp_alive": 2245,
  "proxy_tested": 400,
- "proxy_alive": 22,
- "alive": 2449,
- "kept": 22,
+ "proxy_alive": 21,
+ "alive": 2245,
+ "kept": 21,
  "ru_in_sub": 0,
  "ru_at_top": 0,
- "seconds": 115,
+ "seconds": 111,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -59,7 +59,7 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 23224,
+   "bytes": 24550,
    "links": 100
   },
   {
@@ -80,73 +80,73 @@
  ],
  "top": [
   {
+   "proto": "vless",
+   "port": 443,
+   "ms": 170,
+   "tcp_ms": 38,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 14430,
+   "ms": 186,
+   "tcp_ms": 32,
+   "ru": false
+  },
+  {
+   "proto": "vmess",
+   "port": 1270,
+   "ms": 225,
+   "tcp_ms": 35,
+   "ru": false
+  },
+  {
+   "proto": "vmess",
+   "port": 1270,
+   "ms": 262,
+   "tcp_ms": 25,
+   "ru": false
+  },
+  {
    "proto": "vmess",
    "port": 18000,
-   "ms": 100,
-   "tcp_ms": 7,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 201,
-   "tcp_ms": 28,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 213,
-   "tcp_ms": 24,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 218,
-   "tcp_ms": 22,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 225,
-   "tcp_ms": 27,
-   "ru": false
-  },
-  {
-   "proto": "vless",
-   "port": 23576,
-   "ms": 246,
-   "tcp_ms": 30,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 50376,
-   "ms": 257,
-   "tcp_ms": 30,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 443,
-   "ms": 423,
-   "tcp_ms": 28,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 443,
-   "ms": 481,
-   "tcp_ms": 21,
+   "ms": 263,
+   "tcp_ms": 39,
    "ru": false
   },
   {
    "proto": "trojan",
-   "port": 2096,
-   "ms": 523,
-   "tcp_ms": 21,
+   "port": 443,
+   "ms": 390,
+   "tcp_ms": 34,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 896,
+   "tcp_ms": 41,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 991,
+   "tcp_ms": 42,
+   "ru": false
+  },
+  {
+   "proto": "vmess",
+   "port": 2083,
+   "ms": 1115,
+   "tcp_ms": 26,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 1343,
+   "tcp_ms": 10,
    "ru": false
   }
  ]
