@@ -52,6 +52,11 @@ SOURCES = [
 
 SCHEMES = ("vless://", "vmess://", "trojan://", "ss://")
 
+# Протоколы, которые в РФ душатся DPI сильнее всего. У них TCP-порт открыт и
+# «пинг» в клиенте есть, а реальный трафик не проходит — поэтому в подписку
+# они не попадают вовсе.
+SKIP_PROTOCOLS = {"ss", "ssr"}
+
 MAX_CANDIDATES = 6000   # сколько конфигов проверять на стадии 1
 TCP_CONCURRENCY = 400   # одновременных TCP-проверок
 PROXY_TEST = 400        # сколько лучших по TCP гнать на стадию 2 (реальный трафик)
@@ -468,8 +473,10 @@ async def proxy_stage(items, sb_bin, tmpdir):
 
 def collect():
     seen, candidates, src_info, prio = set(), [], [], 0
+    skipped = {}
     for url in SOURCES:
         short = url.split("githubusercontent.com/")[-1][:70]
+        ru = "russia" in url.lower()  # список собран под РФ — такие серверы важнее
         try:
             text = http_get(url)
             lines = split_lines(text)
@@ -487,7 +494,10 @@ def collect():
             p = parse(ln)
             if not p or not is_public(p["host"]):
                 continue
-            candidates.append({**p, "link": ln, "prio": prio})
+            if p["proto"] in SKIP_PROTOCOLS:
+                skipped[p["proto"]] = skipped.get(p["proto"], 0) + 1
+                continue
+            candidates.append({**p, "link": ln, "prio": prio, "ru": ru})
         prio += 1
 
     # уникальные по host:port, но приоритет — первым источникам (список под РФ)
@@ -504,6 +514,8 @@ def collect():
     tail = [c for c in uniq if c["prio"] > 1]
     random.shuffle(tail)
     uniq = (head + tail)[:MAX_CANDIDATES]
+    if skipped:
+        print(f"Пропущено по протоколу (душится DPI): {skipped}")
     return uniq, src_info
 
 
@@ -513,6 +525,22 @@ def write_results(best, mode):
         f.write(plain + "\n")
     with open("sub.txt", "w", encoding="utf-8") as f:
         f.write(base64.b64encode(plain.encode()).decode())
+
+
+def order_for_sub(items):
+    """Порядок в подписке: сначала конфиги из списка под РФ, внутри группы — по скорости.
+
+    Клиенты (Hiddify, NekoBox) и авто-выбор по пингу берут серверы сверху списка,
+    поэтому наверху должно лежать то, что реально работает из России, а не то,
+    что быстро отвечает из американского дата-центра.
+    """
+    def key(c):
+        ms = c.get("proxy_ms")
+        if ms is None:
+            ms = c.get("tcp_ms", 99999)
+        return (0 if c.get("ru") else 1, ms)
+
+    return sorted(items, key=key)
 
 
 def main():
@@ -544,15 +572,16 @@ def main():
 
     # fail-safe: если реальная проверка ничего не дала — отдаём TCP-результаты
     if len(proxy_ok) >= 20:
-        best = proxy_ok[:KEEP]
+        best = order_for_sub(proxy_ok)[:KEEP]
         mode = "proxy"
     else:
-        best = alive[:KEEP]
+        best = order_for_sub(alive)[:KEEP]
         mode = "tcp"
         if not proxy_note:
             proxy_note = "рабочих на стадии 2 меньше 20 — откат на стадию 1"
 
-    print(f"Итог: режим {mode}, в подписке {len(best)}")
+    ru_in_sub = sum(1 for c in best if c.get("ru"))
+    print(f"Итог: режим {mode}, в подписке {len(best)}, из них из списка под РФ: {ru_in_sub}")
 
     write_results(best, mode)
     status = {
@@ -565,6 +594,8 @@ def main():
         "proxy_alive": len(proxy_ok),
         "alive": len(alive),
         "kept": len(best),
+        "ru_in_sub": ru_in_sub,
+        "ru_at_top": sum(1 for c in best[:10] if c.get("ru")),
         "seconds": int(time.time() - started),
         "sources": src_info,
         "top": [
@@ -573,6 +604,7 @@ def main():
                 "port": c["port"],
                 "ms": c.get("proxy_ms", c.get("tcp_ms")),
                 "tcp_ms": c.get("tcp_ms"),
+                "ru": bool(c.get("ru")),
             }
             for c in best[:10]
         ],
