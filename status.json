@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-18T01:51:50+00:00",
+ "updated": "2026-11-18T02:42:35+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 6000,
- "tcp_alive": 2679,
+ "tcp_alive": 2542,
  "proxy_tested": 400,
- "proxy_alive": 63,
- "alive": 2679,
- "kept": 63,
- "seconds": 108,
+ "proxy_alive": 61,
+ "alive": 2542,
+ "kept": 61,
+ "seconds": 103,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -57,18 +57,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 25443,
+   "bytes": 26422,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3108722,
-   "links": 11047
+   "bytes": 3110431,
+   "links": 11056
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1154458,
-   "links": 4410
+   "bytes": 1155379,
+   "links": 4416
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -78,64 +78,64 @@
  ],
  "top": [
   {
-   "proto": "vless",
-   "port": 14430,
-   "ms": 114,
-   "tcp_ms": 12
+   "proto": "vmess",
+   "port": 18000,
+   "ms": 116,
+   "tcp_ms": 7
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 126,
+   "tcp_ms": 5
+  },
+  {
+   "proto": "ss",
+   "port": 8882,
+   "ms": 128,
+   "tcp_ms": 6
+  },
+  {
+   "proto": "ss",
+   "port": 19999,
+   "ms": 128,
+   "tcp_ms": 9
   },
   {
    "proto": "ss",
    "port": 4444,
-   "ms": 124,
+   "ms": 129,
    "tcp_ms": 9
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 137,
-   "tcp_ms": 5
+   "ms": 135,
+   "tcp_ms": 14
   },
   {
    "proto": "ss",
-   "port": 443,
-   "ms": 143,
-   "tcp_ms": 6
-  },
-  {
-   "proto": "ss",
-   "port": 7307,
-   "ms": 146,
-   "tcp_ms": 15
+   "port": 19999,
+   "ms": 138,
+   "tcp_ms": 11
   },
   {
    "proto": "ss",
    "port": 8388,
-   "ms": 147,
+   "ms": 141,
    "tcp_ms": 6
   },
   {
    "proto": "ss",
    "port": 19999,
-   "ms": 147,
-   "tcp_ms": 17
+   "ms": 143,
+   "tcp_ms": 18
   },
   {
-   "proto": "ss",
-   "port": 4444,
-   "ms": 148,
-   "tcp_ms": 6
-  },
-  {
-   "proto": "ss",
-   "port": 8388,
-   "ms": 157,
-   "tcp_ms": 11
-  },
-  {
-   "proto": "ss",
-   "port": 8881,
-   "ms": 165,
-   "tcp_ms": 6
+   "proto": "vless",
+   "port": 8080,
+   "ms": 145,
+   "tcp_ms": 9
   }
  ]
 }
