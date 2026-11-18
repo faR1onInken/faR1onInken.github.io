@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-18T16:31:43+00:00",
- "mode": "tcp",
- "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
+ "updated": "2026-11-18T16:37:30+00:00",
+ "mode": "proxy",
+ "note": "",
  "checked": 6000,
- "tcp_alive": 2272,
+ "tcp_alive": 2456,
  "proxy_tested": 400,
- "proxy_alive": 18,
- "alive": 2272,
- "kept": 150,
- "ru_in_sub": 5,
- "ru_at_top": 5,
- "seconds": 121,
+ "proxy_alive": 34,
+ "alive": 2456,
+ "kept": 38,
+ "ru_in_sub": 4,
+ "ru_at_top": 4,
+ "seconds": 117,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -59,7 +59,7 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 22760,
+   "bytes": 23518,
    "links": 100
   },
   {
@@ -81,72 +81,72 @@
  "top": [
   {
    "proto": "vless",
-   "port": 443,
-   "ms": 1608,
-   "tcp_ms": 1608,
-   "ru": true
-  },
-  {
-   "proto": "vless",
    "port": 2087,
-   "ms": 1638,
-   "tcp_ms": 1638,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 36442,
-   "ms": 1664,
-   "tcp_ms": 1664,
+   "ms": 1522,
+   "tcp_ms": 1522,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 1695,
-   "tcp_ms": 1695,
+   "ms": 1537,
+   "tcp_ms": 1537,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 36442,
-   "ms": 2027,
-   "tcp_ms": 2027,
+   "ms": 2002,
+   "tcp_ms": 2002,
    "ru": true
   },
   {
-   "proto": "vmess",
-   "port": 8080,
-   "ms": 5,
-   "tcp_ms": 5,
+   "proto": "vless",
+   "port": 443,
+   "ms": 3070,
+   "tcp_ms": 3070,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 14430,
+   "ms": 236,
+   "tcp_ms": 12,
    "ru": false
   },
   {
-   "proto": "vmess",
+   "proto": "vless",
+   "port": 443,
+   "ms": 275,
+   "tcp_ms": 49,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 283,
+   "tcp_ms": 40,
+   "ru": false
+  },
+  {
+   "proto": "vless",
+   "port": 28190,
+   "ms": 293,
+   "tcp_ms": 31,
+   "ru": false
+  },
+  {
+   "proto": "vless",
    "port": 80,
-   "ms": 6,
-   "tcp_ms": 6,
+   "ms": 318,
+   "tcp_ms": 35,
    "ru": false
   },
   {
    "proto": "vmess",
-   "port": 80,
-   "ms": 6,
-   "tcp_ms": 6,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 8880,
-   "ms": 6,
-   "tcp_ms": 6,
-   "ru": false
-  },
-  {
-   "proto": "vmess",
-   "port": 80,
-   "ms": 6,
-   "tcp_ms": 6,
+   "port": 1270,
+   "ms": 363,
+   "tcp_ms": 46,
    "ru": false
   }
  ]
