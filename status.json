@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-21T02:23:04+00:00",
+ "updated": "2026-11-21T03:17:47+00:00",
  "mode": "proxy",
  "note": "",
  "checked": 6000,
- "tcp_alive": 2711,
+ "tcp_alive": 2644,
  "proxy_tested": 400,
  "proxy_alive": 20,
- "alive": 2711,
+ "alive": 2644,
  "kept": 40,
  "ru_in_sub": 20,
  "ru_at_top": 10,
- "seconds": 116,
+ "seconds": 120,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -59,8 +59,8 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 22876,
-   "links": 99
+   "bytes": 24850,
+   "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
@@ -82,71 +82,71 @@
   {
    "proto": "vless",
    "port": 443,
-   "ms": 424,
-   "tcp_ms": 424,
+   "ms": 389,
+   "tcp_ms": 389,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 428,
-   "tcp_ms": 428,
+   "ms": 392,
+   "tcp_ms": 392,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 432,
-   "tcp_ms": 432,
+   "ms": 395,
+   "tcp_ms": 395,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 457,
-   "tcp_ms": 457,
+   "ms": 416,
+   "tcp_ms": 416,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 460,
-   "tcp_ms": 460,
+   "ms": 419,
+   "tcp_ms": 419,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2096,
-   "ms": 464,
-   "tcp_ms": 464,
+   "ms": 422,
+   "tcp_ms": 422,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2083,
-   "ms": 467,
-   "tcp_ms": 467,
+   "ms": 425,
+   "tcp_ms": 425,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2053,
-   "ms": 470,
-   "tcp_ms": 470,
+   "ms": 427,
+   "tcp_ms": 427,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 474,
-   "tcp_ms": 474,
+   "ms": 431,
+   "tcp_ms": 431,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 478,
-   "tcp_ms": 478,
+   "ms": 434,
+   "tcp_ms": 434,
    "ru": true
   }
  ]
