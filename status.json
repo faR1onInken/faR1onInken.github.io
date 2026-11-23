@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-23T08:37:05+00:00",
+ "updated": "2026-11-23T09:57:46+00:00",
  "mode": "tcp",
  "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
  "checked": 6000,
- "tcp_alive": 2320,
+ "tcp_alive": 2363,
  "proxy_tested": 400,
- "proxy_alive": 18,
- "alive": 2320,
+ "proxy_alive": 15,
+ "alive": 2363,
  "kept": 150,
- "ru_in_sub": 81,
+ "ru_in_sub": 71,
  "ru_at_top": 10,
- "seconds": 118,
+ "seconds": 121,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 129446,
-   "links": 433
+   "bytes": 79459,
+   "links": 279
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -24,28 +24,28 @@
   },
   {
    "src": "barry-far/V2ray-config/main/All_Configs_Sub.txt",
-   "bytes": 2133782,
+   "bytes": 2133191,
    "links": 9067
   },
   {
    "src": "barry-far/V2ray-config/main/Sub1.txt",
-   "bytes": 68114,
+   "bytes": 68416,
    "links": 448
   },
   {
    "src": "barry-far/V2ray-config/main/Sub2.txt",
-   "bytes": 52794,
+   "bytes": 52790,
    "links": 501
   },
   {
    "src": "barry-far/V2ray-config/main/Sub3.txt",
-   "bytes": 50296,
+   "bytes": 50271,
    "links": 501
   },
   {
    "src": "barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
-   "bytes": 1531807,
-   "links": 5855
+   "bytes": 1532301,
+   "links": 5856
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
@@ -59,17 +59,17 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 26804,
+   "bytes": 27630,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 3219164,
-   "links": 11529
+   "bytes": 3217216,
+   "links": 11519
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1182798,
+   "bytes": 1182786,
    "links": 4635
   },
   {
@@ -81,72 +81,72 @@
  "top": [
   {
    "proto": "vless",
-   "port": 443,
-   "ms": 428,
-   "tcp_ms": 428,
+   "port": 2087,
+   "ms": 736,
+   "tcp_ms": 736,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 431,
-   "tcp_ms": 431,
+   "ms": 752,
+   "tcp_ms": 752,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 437,
-   "tcp_ms": 437,
+   "ms": 757,
+   "tcp_ms": 757,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 440,
-   "tcp_ms": 440,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 8443,
-   "ms": 458,
-   "tcp_ms": 458,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 461,
-   "tcp_ms": 461,
+   "ms": 768,
+   "tcp_ms": 768,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2096,
-   "ms": 464,
-   "tcp_ms": 464,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2083,
-   "ms": 467,
-   "tcp_ms": 467,
+   "ms": 774,
+   "tcp_ms": 774,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 470,
-   "tcp_ms": 470,
+   "ms": 780,
+   "tcp_ms": 780,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 8443,
+   "ms": 797,
+   "tcp_ms": 797,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 8443,
+   "ms": 842,
+   "tcp_ms": 842,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 473,
-   "tcp_ms": 473,
+   "ms": 849,
+   "tcp_ms": 849,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 2096,
+   "ms": 855,
+   "tcp_ms": 855,
    "ru": true
   }
  ]
