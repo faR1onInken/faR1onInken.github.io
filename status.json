@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-24T03:44:18+00:00",
+ "updated": "2026-11-24T04:52:22+00:00",
  "mode": "tcp",
  "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
  "checked": 6000,
- "tcp_alive": 2408,
+ "tcp_alive": 2437,
  "proxy_tested": 400,
- "proxy_alive": 12,
- "alive": 2408,
+ "proxy_alive": 14,
+ "alive": 2437,
  "kept": 150,
  "ru_in_sub": 150,
  "ru_at_top": 10,
- "seconds": 102,
+ "seconds": 109,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 409317,
-   "links": 1369
+   "bytes": 210992,
+   "links": 694
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -59,18 +59,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 26328,
+   "bytes": 25508,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 2929682,
-   "links": 9818
+   "bytes": 2932671,
+   "links": 9823
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1074941,
-   "links": 4159
+   "bytes": 1076725,
+   "links": 4161
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -80,72 +80,72 @@
  "top": [
   {
    "proto": "vless",
-   "port": 2083,
-   "ms": 562,
-   "tcp_ms": 562,
+   "port": 443,
+   "ms": 498,
+   "tcp_ms": 498,
    "ru": true
   },
   {
    "proto": "vless",
-   "port": 2083,
-   "ms": 567,
-   "tcp_ms": 567,
+   "port": 8443,
+   "ms": 501,
+   "tcp_ms": 501,
    "ru": true
   },
   {
    "proto": "vless",
-   "port": 2083,
-   "ms": 571,
-   "tcp_ms": 571,
+   "port": 443,
+   "ms": 504,
+   "tcp_ms": 504,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 508,
+   "tcp_ms": 508,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2087,
-   "ms": 576,
-   "tcp_ms": 576,
+   "ms": 512,
+   "tcp_ms": 512,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 515,
+   "tcp_ms": 515,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2053,
-   "ms": 580,
-   "tcp_ms": 580,
+   "ms": 519,
+   "tcp_ms": 519,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 2096,
+   "ms": 522,
+   "tcp_ms": 522,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 2083,
+   "ms": 525,
+   "tcp_ms": 525,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 585,
-   "tcp_ms": 585,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2053,
-   "ms": 589,
-   "tcp_ms": 589,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 593,
-   "tcp_ms": 593,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2087,
-   "ms": 598,
-   "tcp_ms": 598,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 602,
-   "tcp_ms": 602,
+   "ms": 530,
+   "tcp_ms": 530,
    "ru": true
   }
  ]
