@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-25T22:29:17+00:00",
- "mode": "proxy",
- "note": "",
+ "updated": "2026-11-25T23:25:09+00:00",
+ "mode": "tcp",
+ "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
  "checked": 6000,
- "tcp_alive": 2156,
+ "tcp_alive": 2179,
  "proxy_tested": 400,
- "proxy_alive": 24,
- "alive": 2156,
- "kept": 44,
- "ru_in_sub": 20,
+ "proxy_alive": 19,
+ "alive": 2179,
+ "kept": 150,
+ "ru_in_sub": 63,
  "ru_at_top": 10,
- "seconds": 118,
+ "seconds": 115,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -59,18 +59,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 24020,
+   "bytes": 25446,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 2882112,
-   "links": 9582
+   "bytes": 2881773,
+   "links": 9580
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1034874,
-   "links": 3980
+   "bytes": 1034667,
+   "links": 3979
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -81,15 +81,15 @@
   {
    "proto": "vless",
    "port": 443,
-   "ms": 771,
-   "tcp_ms": 771,
+   "ms": 770,
+   "tcp_ms": 770,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 776,
-   "tcp_ms": 776,
+   "ms": 775,
+   "tcp_ms": 775,
    "ru": true
   },
   {
@@ -130,22 +130,22 @@
   {
    "proto": "vless",
    "port": 443,
-   "ms": 814,
-   "tcp_ms": 814,
+   "ms": 813,
+   "tcp_ms": 813,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2083,
-   "ms": 820,
-   "tcp_ms": 820,
+   "ms": 819,
+   "tcp_ms": 819,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 836,
-   "tcp_ms": 836,
+   "ms": 835,
+   "tcp_ms": 835,
    "ru": true
   }
  ]
