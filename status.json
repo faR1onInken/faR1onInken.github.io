@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-27T08:46:34+00:00",
+ "updated": "2026-11-27T08:50:11+00:00",
  "mode": "tcp",
  "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
  "checked": 6000,
- "tcp_alive": 1982,
+ "tcp_alive": 2239,
  "proxy_tested": 400,
  "proxy_alive": 18,
- "alive": 1982,
+ "alive": 2239,
  "kept": 150,
  "ru_in_sub": 133,
  "ru_at_top": 10,
- "seconds": 103,
+ "seconds": 113,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
@@ -59,7 +59,7 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 22309,
+   "bytes": 23499,
    "links": 100
   },
   {
@@ -81,71 +81,71 @@
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 377,
-   "tcp_ms": 377,
+   "ms": 658,
+   "tcp_ms": 658,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 380,
-   "tcp_ms": 380,
+   "ms": 662,
+   "tcp_ms": 662,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 8443,
-   "ms": 383,
-   "tcp_ms": 383,
+   "ms": 667,
+   "tcp_ms": 667,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 386,
-   "tcp_ms": 386,
+   "ms": 672,
+   "tcp_ms": 672,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2096,
-   "ms": 388,
-   "tcp_ms": 388,
+   "ms": 677,
+   "tcp_ms": 677,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 400,
-   "tcp_ms": 400,
+   "ms": 693,
+   "tcp_ms": 693,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 443,
+   "ms": 698,
+   "tcp_ms": 698,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2096,
-   "ms": 403,
-   "tcp_ms": 403,
+   "ms": 702,
+   "tcp_ms": 702,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 2053,
-   "ms": 409,
-   "tcp_ms": 409,
+   "ms": 714,
+   "tcp_ms": 714,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 411,
-   "tcp_ms": 411,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2087,
-   "ms": 417,
-   "tcp_ms": 417,
+   "ms": 718,
+   "tcp_ms": 718,
    "ru": true
   }
  ]
