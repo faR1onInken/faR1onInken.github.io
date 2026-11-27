@@ -1,21 +1,21 @@
 {
- "updated": "2026-11-27T11:43:30+00:00",
+ "updated": "2026-11-27T12:49:53+00:00",
  "mode": "tcp",
  "note": "рабочих на стадии 2 меньше 20 — откат на стадию 1",
  "checked": 6000,
- "tcp_alive": 1919,
+ "tcp_alive": 1912,
  "proxy_tested": 400,
- "proxy_alive": 9,
- "alive": 1919,
+ "proxy_alive": 6,
+ "alive": 1912,
  "kept": 150,
- "ru_in_sub": 126,
+ "ru_in_sub": 120,
  "ru_at_top": 10,
- "seconds": 110,
+ "seconds": 100,
  "sources": [
   {
    "src": "igareck/vpn-configs-for-russia/refs/heads/main/BLACK_VLESS_RUS.txt",
-   "bytes": 135806,
-   "links": 456
+   "bytes": 107030,
+   "links": 345
   },
   {
    "src": "nyeinkokoaung404/V2ray-Configs/main/Sub1.txt",
@@ -24,28 +24,28 @@
   },
   {
    "src": "barry-far/V2ray-config/main/All_Configs_Sub.txt",
-   "bytes": 2126064,
-   "links": 8952
+   "bytes": 2125575,
+   "links": 8948
   },
   {
    "src": "barry-far/V2ray-config/main/Sub1.txt",
-   "bytes": 67027,
+   "bytes": 66018,
    "links": 443
   },
   {
    "src": "barry-far/V2ray-config/main/Sub2.txt",
-   "bytes": 50253,
+   "bytes": 50153,
    "links": 500
   },
   {
    "src": "barry-far/V2ray-config/main/Sub3.txt",
-   "bytes": 53565,
+   "bytes": 53751,
    "links": 501
   },
   {
    "src": "barry-far/V2ray-config/main/Splitted-By-Protocol/vless.txt",
-   "bytes": 1458753,
-   "links": 5622
+   "bytes": 1458090,
+   "links": 5620
   },
   {
    "src": "MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt",
@@ -59,18 +59,18 @@
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/top100.txt",
-   "bytes": 26749,
+   "bytes": 23613,
    "links": 100
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/all/configs.txt",
-   "bytes": 2896361,
-   "links": 9699
+   "bytes": 2892896,
+   "links": 9688
   },
   {
    "src": "0xRadikal/Free-v2ray-Configs/main/protocols/vless.txt",
-   "bytes": 1016456,
-   "links": 3921
+   "bytes": 1014148,
+   "links": 3913
   },
   {
    "src": "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main/co",
@@ -80,72 +80,72 @@
  "top": [
   {
    "proto": "vless",
+   "port": 14430,
+   "ms": 531,
+   "tcp_ms": 531,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 2052,
+   "ms": 546,
+   "tcp_ms": 546,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 2052,
+   "ms": 546,
+   "tcp_ms": 546,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 80,
+   "ms": 547,
+   "tcp_ms": 547,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 14430,
+   "ms": 628,
+   "tcp_ms": 628,
+   "ru": true
+  },
+  {
+   "proto": "vless",
+   "port": 30016,
+   "ms": 628,
+   "tcp_ms": 628,
+   "ru": true
+  },
+  {
+   "proto": "vless",
    "port": 443,
-   "ms": 356,
-   "tcp_ms": 356,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2053,
-   "ms": 366,
-   "tcp_ms": 366,
+   "ms": 630,
+   "tcp_ms": 630,
    "ru": true
   },
   {
    "proto": "vless",
    "port": 443,
-   "ms": 384,
-   "tcp_ms": 384,
+   "ms": 635,
+   "tcp_ms": 635,
    "ru": true
   },
   {
    "proto": "vless",
-   "port": 2096,
-   "ms": 387,
-   "tcp_ms": 387,
+   "port": 2052,
+   "ms": 659,
+   "tcp_ms": 659,
    "ru": true
   },
   {
    "proto": "vless",
-   "port": 2053,
-   "ms": 390,
-   "tcp_ms": 390,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 390,
-   "tcp_ms": 390,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 443,
-   "ms": 393,
-   "tcp_ms": 393,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2096,
-   "ms": 396,
-   "tcp_ms": 396,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2087,
-   "ms": 399,
-   "tcp_ms": 399,
-   "ru": true
-  },
-  {
-   "proto": "vless",
-   "port": 2053,
-   "ms": 402,
-   "tcp_ms": 402,
+   "port": 8443,
+   "ms": 663,
+   "tcp_ms": 663,
    "ru": true
   }
  ]
